@@ -1,0 +1,16 @@
+{
+  "name": "devblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "hugo --minify",
+    "build:preview": "hugo --baseURL \"${DEPLOY_PRIME_URL:-/}\" --buildDrafts --buildFuture",
+    "start": "hugo server --minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hugo-extended": "^0.123.8"
+  }
+}

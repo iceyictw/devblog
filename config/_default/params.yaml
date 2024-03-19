@@ -1,0 +1,27 @@
+defaultTheme: dark
+ShowCodeCopyButtons: true
+ShowReadingTime: true
+ShowShareButtons: true
+showtoc: true
+tocopen: true
+ShowPostNavLinks: true
+math: true
+
+homeInfoParams:
+  Title: "iceyic's Blog"
+  Content: Blogs for code and technology learning
+
+# display link icons in home page
+socialIcons:
+  - name: "github"
+    url: "https://github.com/iceyictw"  
+
+# used by fusejs as search engine. Details in https://fusejs.io/api/options.html
+fuseOpts:
+  isCaseSensitive: false
+  shouldSort: true
+  location: 0
+  distance: 1000
+  threshold: 0.4
+  minMatchCharLength: 0
+  keys: ["title", "permalink", "summary", "content"]

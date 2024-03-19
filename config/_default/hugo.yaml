@@ -1,0 +1,11 @@
+baseURL: "https://example.org/"
+languageCode: "zh-tw"
+paginate: 10  # number of elements per page
+title: "ICEYIC"
+theme: "PaperMod"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search

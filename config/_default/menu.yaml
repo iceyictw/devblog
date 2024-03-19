@@ -1,0 +1,20 @@
+main:
+  - identifier: archive
+    name: Archive
+    url: /archive/
+    weight: 5
+    
+  - identifier: search
+    name: Search
+    url: /search/
+    weight: 10
+
+  - identifier: tags
+    name: Tags
+    url: /tags/
+    weight: 20
+  
+  - identifier: home
+    name: Home
+    url: /
+    weight: 30

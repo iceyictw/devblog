@@ -1,4 +1,4 @@
-baseURL: "https://example.org/"
+baseURL: "https://iceyictw.github.io/devblog/"
 languageCode: "zh-tw"
 paginate: 10  # number of elements per page
 title: "ICEYIC"

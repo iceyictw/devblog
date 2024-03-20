@@ -1,3 +1,17 @@
+body {
+  font-family: 'Ubuntu', 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+
 mark {
-  background-color: #a6ff58;
+  background-color: #edff4c;
+}
+
+/* hyperlink hover transition */
+.toc a, .post-content a {
+  transition: all .15s ease-out;
+}
+.toc a:hover, .post-content a:hover {
+  background-color: white;
+  color: black;
+  transition: all .15s ease-out;
 }

@@ -14,7 +14,9 @@ homeInfoParams:
 # display link icons in home page
 socialIcons:
   - name: "github"
-    url: "https://github.com/iceyictw"  
+    url: "https://github.com/iceyictw"
+  - name: "email"
+    url: "mailto:iceyictw@gmail.com"
 
 # used by fusejs as search engine. Details in https://fusejs.io/api/options.html
 fuseOpts:

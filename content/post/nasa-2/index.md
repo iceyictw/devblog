@@ -32,7 +32,7 @@ Hypervisor是一種特別的軟體，能夠讓CPU直接「執行」虛擬機中�
 # 第6週：Network Layer
 接續第3週的Link Layer，這週我們的上課內容是討論Network Layer。我們先來複習一下Ethernet Frame的結構：
 
-{{<figure src="hugo-logo.svg" attr="Logo of [Hugo](https://gohugo.io/)" align="center">}}
+{{<figure src="ethernet_packet.png" attr="乙太網路封包的結構" align="center">}}
 
 其中，Payload的部分，正是Ethernet Frame所要攜帶的資訊，除了像是之前介紹的ARP就是放在這裡面以外，還有大名鼎鼎的IP也是。
 

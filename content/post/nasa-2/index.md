@@ -1,7 +1,7 @@
 ---
 title: 台大資工NASA修課心得(2)-第5~8週
 date: 2024-04-10T02:48:54+08:00
-draft: true
+draft: false
 summary: "關於NASA(網路管理及系統管理)課程的內容摘要、筆記與心得，之二"
 tags: ["course", "learning"]
 ---

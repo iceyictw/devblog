@@ -6,7 +6,7 @@
   "scripts": {
     "build": "hugo --minify",
     "build:preview": "hugo --baseURL \"${DEPLOY_PRIME_URL:-/}\" --buildDrafts --buildFuture",
-    "start": "hugo server --minify -D"
+    "start": "hugo server --minify --buildDrafts"
   },
   "author": "",
   "license": "ISC",

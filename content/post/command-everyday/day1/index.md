@@ -1,7 +1,7 @@
 ---
 title: 一天一指令 Day 1 - grep 和他的兄弟：egrep、fgrep、rgrep
 date: 2025-05-29T21:59:12+08:00
-draft: true
+draft: false
 summary: "關於grep的常用功能及常見問題"
 tags: ["code", "learning", "linux"]
 ---
@@ -17,9 +17,9 @@ grep可以在檔案或是`stdin`中用regex搜尋內容。
 
 首先來看SYNOPSIS：
 ```
-grep [<ins><ins>OPTION</ins></ins>...] <ins>PATTERNS</ins> [<ins>FILE</ins>...]
-grep [<ins>OPTION</ins>...] -e <ins>PATTERNS</ins> ... [<ins>FILE</ins>...]
-grep [<ins>OPTION</ins>...] -f <ins>PATTERN_FILE</ins> ... [<ins>FILE</ins>...]
+grep [OPTION...] PATTERNS [FILE...]
+grep [OPTION...] -e PATTERNS ... [FILE...]
+grep [OPTION...] -f PATTERN_FILE ... [FILE...]
 ```
 
 PATTERNS 是你要搜尋的regex表示式，FILE 則是要搜尋的檔案。

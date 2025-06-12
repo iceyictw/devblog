@@ -45,7 +45,7 @@ MBR 位於硬碟中的前 512 bytes，我們可以透過類似的指令將 MBR �
 dd if=/dev/sdX of=/path/to/mbr_file.img bs=512 count=1
 ```
 
-# 將 iso 燒錄到 USB 碟上
+## 將 iso 燒錄到 USB 碟上
 
 製作開機碟也是`dd`可以做到的事：
 ```
@@ -53,7 +53,7 @@ dd if=ubuntu.iso of=/dev/sdX bs=4M conv=fsync oflag=direct status=progress
 ```
 這裡的`fsync`選項讓`dd`確保內容的確物理地寫入到磁碟上再結束，而非可能只寫入到 kernel buffer 中。`direct`則與 syscall `open()`的 flag `O_DIRECT`有關。(這個flag是一個我認為有點難解釋清楚的的 flag，可以詳見[這篇StackOverflow](https://stackoverflow.com/questions/41257656/what-does-o-direct-really-mean))
 
-# 將硬碟上的內容全數寫為零
+## 將硬碟上的內容全數寫為零
 
 我們可以利用`/dev/null`來讀出無限量的0位元：
 ```

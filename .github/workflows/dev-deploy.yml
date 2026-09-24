@@ -27,7 +27,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: |
-        mkdir -p /srv/devblog/release/${{ github.sha }}/devblog
-        rsync -a --delete public/ /srv/devblog/release/${{ github.sha }}devblog
-        rm -f /srv/devblog/current
-        ln -s /srv/devblog/release/${{ github.sha }} /srv/devblog/current
+          mkdir -p /srv/devblog/release/${{ github.sha }}/devblog
+          rsync -a --delete public/ /srv/devblog/release/${{ github.sha }}devblog
+          rm -f /srv/devblog/current
+          ln -s /srv/devblog/release/${{ github.sha }} /srv/devblog/current

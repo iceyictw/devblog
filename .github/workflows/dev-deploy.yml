@@ -1,0 +1,28 @@
+name: Deploy site to self-hosted development server
+
+on:
+  push:
+    branches:
+      - dev
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: development
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: [self-hosted, development]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          submodules: recursive
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build

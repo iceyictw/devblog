@@ -1,7 +1,7 @@
 ---
 title: Github Actions 實例：自架伺服器自動部署 Blog
 date: 2026-09-25T00:01:27+08:00
-draft: true
+draft: false
 summary: "以自架伺服器部署 Devblog 為例，介紹如何設定 GitHub Actions Self-hosted Runner，並透過 Workflow 自動建置與部署網站。從 Workflow 的基本結構、Runner 的目錄管理，到環境變數與 Context 的差異，逐步說明 GitHub Actions 的運作方式。"
 tags: ["learning", "linux"]
 ---

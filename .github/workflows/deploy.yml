@@ -1,9 +1,9 @@
-name: Deploy site to self-hosted development server
+name: Deploy site to self-hosted production server
 
 on:
   push:
     branches:
-      - dev
+      - main
   workflow_dispatch:
 
 permissions:
@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: [self-hosted, development]
+    runs-on: [self-hosted, production]
     steps:
       - uses: actions/checkout@v7
         with:
@@ -27,7 +27,4 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: |
-          mkdir -p /srv/devblog/release/${{ github.sha }}/devblog
-          rsync -a --delete public/ /srv/devblog/release/${{ github.sha }}/devblog
-          rm -f /srv/devblog/current
-          ln -s /srv/devblog/release/${{ github.sha }} /srv/devblog/current
+          rsync -av --delete public/ /srv/devblog/

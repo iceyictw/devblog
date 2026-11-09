@@ -1,4 +1,4 @@
-baseURL: "https://iceyictw.github.io/devblog/"
+baseURL: "https://blog.iceyic.dev/"
 languageCode: "zh-tw"
 paginate: 10  # number of elements per page
 title: "ICEYIC"

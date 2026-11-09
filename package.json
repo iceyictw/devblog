@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "hugo-extended": "^0.123.8"
+    "hugo-extended": "^0.169.0"
   }
 }
